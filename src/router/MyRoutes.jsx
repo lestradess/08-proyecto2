@@ -1,4 +1,4 @@
-import { Routes, Route, NavLink, Link, BrowserRouter } from 'react-router-dom'
+import { Routes, Route, BrowserRouter, Navigate } from 'react-router-dom'
 import { Home } from '../components/Home'
 import { Portfolio } from '../components/Portfolio'
 import { Curriculum } from '../components/Curriculum';
@@ -13,18 +13,19 @@ export const MyRoutes = () => {
       {/*Header and Nav */ }
       <HeaderNav />
       {/*Content */ }
-      <Routes>
-        <Route path='/' element={ <Home /> } />
-        <Route path='/home' element={ <Home /> } />
-        <Route path='/portfolio' element={ <Portfolio /> } />
-        <Route path='/curriculum' element={ <Curriculum /> } />
-        <Route path='/services' element={ <Services /> } />
-        <Route path='/contact' element={ <Contact /> } />
+      <section className='content'>
+        <Routes>
+          <Route path='/' element={ <Navigate to="/home" /> } />
+          <Route path='/home' element={ <Home /> } />
+          <Route path='/portfolio' element={ <Portfolio /> } />
+          <Route path='/curriculum' element={ <Curriculum /> } />
+          <Route path='/services' element={ <Services /> } />
+          <Route path='/contact' element={ <Contact /> } />
 
-      </Routes>
+        </Routes>
+      </section>
+
       {/*Footer */ }
-      <br />
-      <hr /> 
       <Footer />
     </BrowserRouter>
   )
