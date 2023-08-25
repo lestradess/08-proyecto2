@@ -1,5 +1,5 @@
 
-import {trabajos} from "../data/jobs";
+import { ListWorks } from "./ListWorks";
 
 export const Portfolio = () => {
     return (
@@ -12,12 +12,9 @@ export const Portfolio = () => {
                 <div className="letter-middle">
                     <span>L</span>
                     <h2>istado de proyectos</h2>
-                </div>
-                <section className="portfolio">
-                    
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quidem eveniet sunt tempora vel nostrum consequatur laborum possimus magnam debitis illum dolores amet mollitia quo laboriosam numquam, cumque alias praesentium.</p>
 
-                </section>
+                </div>
+                <ListWorks />
             </div>
         </>
     )

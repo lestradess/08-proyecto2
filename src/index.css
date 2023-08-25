@@ -197,8 +197,8 @@ textarea:focus {
   display: flex;
   justify-content: start;
   flex-grow: 2;
-
 }
+
 
 .letter-middle span {
   display: block;
@@ -299,7 +299,69 @@ textarea {
 .link h2 {
   margin-left: 10px;
 }
-@media screen and (max-width:780px) {
+
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+  margin-top: 35px;
+}
+
+.work-item {
+  flex-basis: 30%;
+  flex-grow: 1;
+  margin: 20px;
+
+}
+
+.work-item img {
+  width: 100%;
+  box-shadow: 1px 3px 6px black;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.work-item .mask img {
+  width: 350px;
+  height: 300px;
+  align-items: center;
+  box-shadow: 0px 5px 14px grey;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 35px;
+}
+
+.work-item img:hover {
+  box-shadow: 2px 2px 30px #ff8585;
+  width: 360px;
+  height: 310px;
+  transition: all 500ms ;
+}
+
+.work-item span {
+  display: block;
+  font-size: small;
+  color: grey;
+  margin-top: 10px;
+}
+
+.work-item h3 {
+  display: block;
+  color: grey;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.work-item h4 {
+  display: block;
+  color: grey;
+  border-top: 1px solid grey;
+  margin: 0;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+
+@media screen and (max-width:884px) {
   .header nav ul {
     flex-direction: column;
   }
@@ -307,10 +369,16 @@ textarea {
   .header li {
     font-size: 12px;
   }
+
   .footer nav ul {
     flex-direction: column;
   }
-  .footer li{
+
+  .footer li {
     font-size: 12px;
+  }
+
+  .works {
+    text-align: center;
   }
 }

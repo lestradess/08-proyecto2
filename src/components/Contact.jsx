@@ -1,6 +1,10 @@
 
 
 export const Contact = () => {
+    const handleClick = (e) => {
+        e.preventDefault();
+        window.open('https://lestradamus.es/contacta-conmigo/', '_blank');
+    }
     return (
         <>
             <div className="page">
@@ -15,7 +19,8 @@ export const Contact = () => {
                         <input type="text" placeholder="Apellidos" />
                         <input type="email" placeholder="Email" />
                         <textarea placeholder="Motivo de contacto"></textarea>
-                        <input className="border" type="submit" value="Enviar" />
+                        <input className="border" type="submit" value="Enviar" onClick={handleClick}/>
+                        { }
                     </form>
                     <div className="links">
                         <div className="link">

@@ -6,6 +6,7 @@ import { Services } from '../components/Services';
 import { Contact } from '../components/Contact';
 import { HeaderNav } from '../components/layout/HeaderNav';
 import { Footer } from "../components/layout/Footer";
+import { Error } from '../components/layout/Error';
 
 export const MyRoutes = () => {
   return (
@@ -21,7 +22,7 @@ export const MyRoutes = () => {
           <Route path='/curriculum' element={ <Curriculum /> } />
           <Route path='/services' element={ <Services /> } />
           <Route path='/contact' element={ <Contact /> } />
-
+          <Route path='*' element ={<Error />}> </Route>
         </Routes>
       </section>
 

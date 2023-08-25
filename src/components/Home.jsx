@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { ListWorks } from "./ListWorks"
 
 
 export const Home = () => {
@@ -71,7 +72,10 @@ export const Home = () => {
             <div className="page">
                 <div className="letter-middle">
                     <span>E</span>
-                    <h2> stos son algunos de mis proyectos</h2>
+                    <h3> stos son algunos de mis proyectos</h3>
+                </div>
+                <div>
+                    <ListWorks limit="4" />
                 </div>
             </div>
         </>
